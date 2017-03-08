@@ -6,7 +6,22 @@ using UnityEngine.UI;
 public class BuyBtn : MonoBehaviour {
 
 	[SerializeField]
+	private GameObject fishPrefab;
+
+	public GameObject FishPrefab {
+		get {
+			return fishPrefab;
+		}
+	}
+
+	[SerializeField]
 	private int price;
+
+	public int Price {
+		get {
+			return price;
+		}
+	}
 
 	[SerializeField]
 	private Text priceTxt;

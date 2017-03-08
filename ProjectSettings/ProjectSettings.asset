@@ -462,6 +462,7 @@ PlayerSettings:
   vrEditorSettings: {}
   cloudServicesEnabled:
     Collab: 1
+    UNet: 1
   cloudProjectId: e6b3501c-8013-4e5d-b172-882a2f79f6c6
   projectName: FishGame
   organizationId: peeaks

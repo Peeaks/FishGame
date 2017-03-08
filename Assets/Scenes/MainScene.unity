@@ -475,8 +475,8 @@ Canvas:
   m_GameObject: {fileID: 977559930}
   m_Enabled: 1
   serializedVersion: 2
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 904536671}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -691,9 +691,8 @@ MonoBehaviour:
         m_MethodName: BuyFish
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1492147239950226, guid: a3ad2292109314dcab89cc7be2ccd314,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 1629941166}
+          m_ObjectArgumentAssemblyTypeName: BuyBtn, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -745,8 +744,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6748f0d10bdf34261af706242b311260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fishPrefab: {fileID: 1492147239950226, guid: a3ad2292109314dcab89cc7be2ccd314, type: 2}
   price: 20
-  priceTxt: {fileID: 0}
+  priceTxt: {fileID: 485374330}
 --- !u!1 &1703544422
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,7 +774,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e36d013937dcb4ea1acee0d9220ad23f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currency: 100
+  money: 500
+  moneyText: {fileID: 2097693594}
+  fishFood: {fileID: 1146061700401672, guid: 6b8f8ffca956641b0bd36dc6837b8a6c, type: 2}
 --- !u!4 &1703544424
 Transform:
   m_ObjectHideFlags: 0
@@ -869,9 +871,8 @@ MonoBehaviour:
         m_MethodName: BuyFish
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1808991841481246, guid: 82adc09304d6f4dd2a43d5e185ed8269,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 1708085908}
+          m_ObjectArgumentAssemblyTypeName: BuyBtn, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -923,8 +924,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6748f0d10bdf34261af706242b311260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fishPrefab: {fileID: 1808991841481246, guid: 82adc09304d6f4dd2a43d5e185ed8269, type: 2}
   price: 5
-  priceTxt: {fileID: 0}
+  priceTxt: {fileID: 2091704708}
 --- !u!1001 &1733908183
 Prefab:
   m_ObjectHideFlags: 0
@@ -1052,9 +1054,8 @@ MonoBehaviour:
         m_MethodName: BuyFish
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1187594100593194, guid: 55c2c2ee6025e44718bd858a032c7796,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 1917252501}
+          m_ObjectArgumentAssemblyTypeName: BuyBtn, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1106,8 +1107,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6748f0d10bdf34261af706242b311260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fishPrefab: {fileID: 1187594100593194, guid: 55c2c2ee6025e44718bd858a032c7796, type: 2}
   price: 50
-  priceTxt: {fileID: 0}
+  priceTxt: {fileID: 2116911406}
 --- !u!1 &2082055111
 GameObject:
   m_ObjectHideFlags: 0
@@ -1189,9 +1191,8 @@ MonoBehaviour:
         m_MethodName: BuyFish
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1436080513011256, guid: 79af47a503a104e8791b16ceaa35c51a,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 2082055116}
+          m_ObjectArgumentAssemblyTypeName: BuyBtn, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1243,8 +1244,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6748f0d10bdf34261af706242b311260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fishPrefab: {fileID: 1436080513011256, guid: 79af47a503a104e8791b16ceaa35c51a, type: 2}
   price: 10
-  priceTxt: {fileID: 0}
+  priceTxt: {fileID: 1132924569}
 --- !u!1 &2091704704
 GameObject:
   m_ObjectHideFlags: 0

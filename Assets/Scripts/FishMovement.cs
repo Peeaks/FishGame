@@ -19,7 +19,7 @@ public class FishMovement : MonoBehaviour {
 	void Update () {
 		CheckForWaypoint ();
 		MoveToWaypoint ();
-
+		CheckForSpriteChange ();
 	}
 
 	// This method checks if the fishes old position is equal to its current position
@@ -36,6 +36,15 @@ public class FishMovement : MonoBehaviour {
 	// This method moves the fish towards the waypoint variable
 	private void MoveToWaypoint() {
 		transform.position = Vector2.MoveTowards(new Vector2(transform.position.x, transform.position.y), waypoint, speed * Time.deltaTime);
+	}
+
+	private void CheckForSpriteChange() {
+		SpriteRenderer sr = gameObject.GetComponent<SpriteRenderer>(); 
+		if (oldPos.x > transform.position.x) {
+			sr.flipX = false;
+		} else {
+			sr.flipX = true;
+		}
 	}
 
 }
